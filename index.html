@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>la cosiaca pait</title>
+	<style>
+		.pro1{
+			position: absolute;
+			top: 15%;
+			left: 5%;
+			width: 15%;
+			height: 10%;
+			font-size: 20px;
+			color: red;
+			background-color: yellow;
+		}
+		.pro2{
+			position: absolute;
+			top: 35%;
+			left: 5%;
+			width: 15%;
+			height: 10%;
+			font-size: 20px;
+			color: red;
+			background-color: yellow;
+		}
+		.gua{
+			position: absolute;
+			top: 55%;
+			left: 5%;
+			width: 15%;
+			height: 10%;
+			font-size: 40px;
+			color: red;
+			background-color: yellow;
+		}
+		.cajon{
+			position: absolute;
+			top: 15%;
+			left: 35%;
+			width: 50%;
+			height: 50%;
+			font-size: 40px;
+			color: red;
+			background-color: yellow;
+		}
+
+	</style>
+</head>
+<body>
+<form>
+<input class="pro1" id="pr1" type="text" placeholder="Ingrese el nombre del producto:"></input>
+<input class="pro2" id="pr2" type="text" placeholder="Ingrese el precio del producto:"></input>
+</form>
+<div class="gua" onclick="guardar()">Guardar</div>
+<div class="cajon" id="menu"></div>
+<script>
+	function guardar(){
+		a=menu.innerHTML;
+		b=pr1.value;
+		c=Number(pr2.value);
+		menu.innerHTML=a+"<br>"+b+": "+c;
+	}
+</script>
+</body>
+</html>
